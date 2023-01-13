@@ -1,0 +1,32 @@
+REM: WIN+R
+Press:131+114
+
+REM: type open Powershell as Admin (/ = -)
+Print:powershell Start/Process cmd /Verb runAs
+
+REM: Press enter
+Press:176
+
+REM: Press left-alt
+Press:130
+
+REM: Press z (y) for yes
+Press: 90
+
+REM: add new keyboard layout
+Print:powershell New/WinUserLanguageList en/US
+
+REM: press enter
+Press:176
+
+REM: set the keyboard layout
+Print:powershell Set/WinUserLanguageList /LanguageList en/US
+
+REM: press enter
+Press:176
+
+REM: Press z (y) for yes
+Press: 90
+
+REM: Press enter
+Press:176
