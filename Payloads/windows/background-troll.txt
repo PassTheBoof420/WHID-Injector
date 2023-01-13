@@ -1,29 +1,86 @@
+REM: Delay 500MS
 CustomDelay:500
+
+REM: Press WIN+R
 Press:131+114
+
+REM: Delay 500MS
 CustomDelay:500
+
+REM: open link in chrome
 Print:chrome.exe https://hips.hearstapps.com/hmg-prod/images/grogu-baby-yoda-the-child-1606497947.png
+
+REM: press return
 Press:176
-CustomDelay:1500
+
+REM: Delay 500MS
+CustomDelay:500
+
+REM: press ctrl+s
 Press:128+115
+
+REM: Delay 500MS
 CustomDelay:500
-Print:%userprofile%\\downloads\\giantduck.jpg
+
+REM: save png
+Print:C:\temp\giantduck.jpg
+
+REM: press return
 Press:176
+
+REM: Press WIN+R
 Press:131+114x
+
+REM: Delay 500MS
 CustomDelay:500
+
+REM: open mspaint
 Print:mspaint
+
+REM: press return
 Press:176
+
+REM: Delay 150MS
 CustomDelay:150
+
+REM: press ctrl+o
 Press:128+111
-Print:%userprofile%\\downloads\\giantduck.jpg
+
+REM: open png file
+Print:C:\temp\giantduck.jpg
+
+REM: Delay 100MS
 CustomDelay:100
+
+REM: arrow down
 Press:217
+
+REM: press return f
 Press:176kf
+
+REM: press left-alt + f
 Press:130+102
+
+REM: Delay 1000MS
 CustomDelay:1000
+
+REM: print k
 Print:k
+
+REM: Delay 1000MS
 CustomDelay:1000
+
+REM: print f
 Print:f
+
+REM: Delay 3000MS
 CustomDelay:3000
+
+REM: press left-alt + f
 Press:130+102
+
+REM: Delay 1000MS
 CustomDelay:1000
+
+REM: print x
 Print:x
