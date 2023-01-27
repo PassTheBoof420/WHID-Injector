@@ -1,0 +1,46 @@
+CustomDelay:100
+Press:131+32
+
+CustomDelay:100
+Print:powershell
+
+CustomDelay:100
+Press:176
+
+CustomDelay:100
+Print:$desktop = \"$env:userprofile\\Desktop\"
+
+Press:176
+CustomDelay:100
+Print:for ($i = 1; $i -le 10; $i++) {
+Press:176
+
+CustomDelay:100
+Print:$folderName = \"folder_number_$(Get-Random)\"
+Press:176
+
+CustomDelay:100
+Print:New-Item -ItemType Directory -Path \"$desktop$folderName\"
+Press:176
+
+CustomDelay:100
+Print:}
+Press:176
+
+CustomDelay:100
+Print:$script = \"$desktop\\script.ps1\"
+Press:176
+
+CustomDelay:100
+Print:$content = (Get-History -Count 1)[0].CommandLine
+Press:176
+
+CustomDelay:100
+Print:$content | Out-File $script
+
+Press:176
+CustomDelay:100
+Print:. $script
+
+Press:176
+CustomDelay:100
